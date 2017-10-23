@@ -9,6 +9,17 @@ $dbConn -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 
 
+//test
+$sql= "SELECT DISTINCT(deviceType) FROM tc_device ORDER BY deviceType";
+    
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute();
+    $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    foreach($records as $record){
+        echo "<option> ".$record['deviceType']."</option>";
+    }
+//test^^
+
 ?>
 
 <!DOCTYPE html>
