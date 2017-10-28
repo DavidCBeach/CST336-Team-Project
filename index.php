@@ -18,9 +18,13 @@ $dbConn -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 <html>
     <head>
-        
+        <title>Fruits, Vegetables, and Nuts</title>
     </head>
     <body>
+        <h1>Fruits, Vegetables, and Nuts</h1>
+        <h2>Choose login:</h2>
+        <a href="/userLogin.php" >User Login</a>
+        <a href="/staffLogin.php">Staff Login</a>
         
     </body>
 </html>
