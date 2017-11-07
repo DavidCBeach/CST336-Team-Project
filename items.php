@@ -7,6 +7,7 @@ $password="55c0d40e";
 $conn = new PDO("mysql:host=$host;dbname=$dbname",$username,$password);
 $conn -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
+
 function getProductTypes() {
     global $conn;
     $sql = "SELECT DISTINCT(productType)
@@ -90,7 +91,8 @@ function displayProducts(){
         
         echo  $record['productName'] . "     " .
               "<a target='checkoutHistory' href='checkoutHistory.php?productId=".$record['productId'].
-              "'> Checkout History </a> <br /> </t>";
+              "'> Checkout History </a>  <a href='addcart.php?item=".$record['productName'].
+              "'> Add to Cart </a> <br /> </t>";
         
     }
 }
@@ -129,6 +131,7 @@ function displayProducts(){
         </div>
         
         <hr>
+        <a href="cart.php">Look at cart</a>
         <div id = display>
         <?=displayProducts()?>
         </div>

@@ -24,7 +24,6 @@ $dbConn -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         <h1>Fruits, Vegetables, and Nuts</h1>
         <h2>Choose login:</h2>
         <a href="/userLogin.php" >Customer Login</a>
-        <a href="/staffLogin.php">Staff Login</a>
         
     </body>
 </html>
