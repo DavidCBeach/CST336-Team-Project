@@ -88,8 +88,7 @@ function displayProducts(){
     
      foreach ($records as $record) {
         
-        echo  $record['productName'] . "     " . $record['productType'] . "     " .
-              $record['price'] .  "      " . $record['status'] .  "      " .
+        echo  $record['productName'] . "     " .
               "<a target='checkoutHistory' href='checkoutHistory.php?productId=".$record['productId'].
               "'> Checkout History </a> <br /> </t>";
         
