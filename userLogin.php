@@ -11,9 +11,6 @@
         <form method="POST" action="loginProcess.php">
             
             Username: <input type="text" name="email"/> <br />
-            
-            Password: <input type="password" name="lastName"/> <br />
-            
             <input type="submit" name="login" value="Login"/>
             
             

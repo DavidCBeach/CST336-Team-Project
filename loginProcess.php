@@ -2,10 +2,12 @@
 session_start();
 
 
-include 'dbConnection.php';
-$conn = getDatabaseConnection();
-
-
+$host = "us-cdbr-iron-east-05.cleardb.net";
+$dbname="heroku_c95c62d6327a93c";
+$username="bc1caf57472822";
+$password="55c0d40e";
+$conn = new PDO("mysql:host=$host;dbname=$dbname",$username,$password);
+$conn -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 $username = $_POST['email'];
 //$password = $_POST['lastName'];
