@@ -122,9 +122,9 @@ function displayProducts(){
             <br>
             Order by:
             <input type="radio" name="orderBy" id="orderByName" value="name"/> 
-             <label for="oderByName"> Name </label>
+             <label for="orderByName"> Name </label>
             <input type="radio" name="orderBy" id="orderByPrice" value="price"/> 
-             <label for="oderByPrice"> Price </label>
+             <label for="orderByPrice"> Price </label>
             
             <input type="submit" value="Search!" name="submit" >
         </form>
