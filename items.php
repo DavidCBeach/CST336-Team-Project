@@ -100,11 +100,11 @@ function displayProducts(){
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lab 5: Device Search </title>
+        <title>Team Project: Shopping Cart</title>
     </head>
     <body >
         
-        <h1> Technology Center: Checkout System </h1>
+        <h1> CSUMB Market: Fruits, Veggies, Nuts </h1>
         <div id = input>
         <form>
             Product: <input type="text" name="productName" placeholder="Product Name"/>
