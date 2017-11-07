@@ -92,7 +92,7 @@ function displayProducts(){
         echo  $record['productName'] . "     " .
               "<a target='checkoutHistory' href='checkoutHistory.php?productId=".$record['productId'].
               "'> Checkout History </a>  <a href='addcart.php?item=".$record['productName'].
-              "'> Add to Cart </a> <br /> </t>";
+              "'> Add to Cart </a> <a target='description' href='description.php?productId=".$record['productId']."'> Description </a> <br /> </t>";
         
     }
 }
@@ -138,6 +138,7 @@ function displayProducts(){
         
         <div id = css>
         <iframe name="checkoutHistory" width="675" height="771" allowtransparency="true" style="background: #d5e1df;"></iframe>
+        <iframe name="description" width="675" height="771" allowtransparency="true" style="background: #d5e1df;"></iframe>
         </div>
     </body>
 </html>
