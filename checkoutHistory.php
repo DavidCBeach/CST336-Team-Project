@@ -26,7 +26,7 @@ function displayCheckoutHistory() {
         echo "$i" .")." ."      PurchaseDate:  " .$record['purchaseDate'] . "<br />" . "<br />";
         echo "Product Name:  " .$record['productName']  . "<br />";
         echo "Product Type:  " .$record['productType'] . "<br />";
-        echo "Price:  " .$record['price'] . "<br />";
+        echo "Price:  $ " .$record['price'] . ".00" ."<br />";
         echo "First Name:  " .$record['firstName'] . "<br />";
         echo "Last Name:  " .$record['lastName'] . "<br />";
         echo  "Email: " . " " .$record['email'] . "<br />";
