@@ -3,6 +3,8 @@
 <html>
     <head>
         <title>User Login</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
 

@@ -49,6 +49,8 @@ function displayProduct(){
 <html>
     <head>
         <title> Product Description </title>
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
         
