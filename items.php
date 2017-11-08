@@ -1,13 +1,10 @@
 <?php
-
 $host = "us-cdbr-iron-east-05.cleardb.net";
 $dbname="heroku_c95c62d6327a93c";
 $username="bc1caf57472822";
 $password="55c0d40e";
 $conn = new PDO("mysql:host=$host;dbname=$dbname",$username,$password);
 $conn -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-
-
 function getProductTypes() {
     global $conn;
     $sql = "SELECT DISTINCT(productType)
@@ -24,8 +21,6 @@ function getProductTypes() {
         
     }
 }
-
-
 function displayProducts(){
     global $conn;
     
@@ -44,7 +39,6 @@ function displayProducts(){
   
             $sql .= " AND productName LIKE :productName"; //using named parameters
             $namedParameters[':productName'] = $_GET['productName'];
-
          }
          
         if (!empty($_GET['productType'])) {
@@ -54,7 +48,6 @@ function displayProducts(){
   
             $sql .= " AND productType = :pType"; //using named parameters
             $namedParameters[':pType'] =   $_GET['productType'] ;
-
          }     
          
          if (isset($_GET['available'])) {
@@ -96,19 +89,23 @@ function displayProducts(){
         
     }
 }
-
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
         <title>Team Project: Shopping Cart</title>
+<<<<<<< HEAD
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
          <div class = "jumbotron">
         <h1 id="banner">Farm Fresh: Fruits, Veggies, and Nuts</h1>
         </div>
+=======
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <meta name="theme-color" content="#ffffff">
+>>>>>>> 4ab6503129c075c0400933c66296f44aef7122c0
     </head>
     <body >
         <div class = "outer">

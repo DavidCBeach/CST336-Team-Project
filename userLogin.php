@@ -9,6 +9,8 @@
          <div class = "jumbotron">
         <h1 id="banner">Farm Fresh: Fruits, Veggies, and Nuts</h1>
         </div>
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <meta name="theme-color" content="#ffffff">
     </head>
     <body>
     <div class="login">
