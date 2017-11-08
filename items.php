@@ -95,6 +95,8 @@ function displayProducts(){
 <html>
     <head>
         <title>Team Project: Shopping Cart</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <meta name="theme-color" content="#ffffff">
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
