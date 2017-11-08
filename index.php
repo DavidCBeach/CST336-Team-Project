@@ -12,10 +12,13 @@ $dbConn -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
 <html>
     <head>
-        <title>Fruits, Vegetables, and Nuts</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+        <title>Farm Fresh </title>
+        
     </head>
     <body>
-        <h1>Fruits, Vegetables, and Nuts</h1>
+        <h1>Farm Fresh: Fruits, Veggies, and Nuts</h1>
         <h2>Choose login:</h2>
         <a href="userLogin.php" >Customer Login</a>
         
