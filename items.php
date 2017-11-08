@@ -1,13 +1,10 @@
 <?php
-
 $host = "us-cdbr-iron-east-05.cleardb.net";
 $dbname="heroku_c95c62d6327a93c";
 $username="bc1caf57472822";
 $password="55c0d40e";
 $conn = new PDO("mysql:host=$host;dbname=$dbname",$username,$password);
 $conn -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-
-
 function getProductTypes() {
     global $conn;
     $sql = "SELECT DISTINCT(productType)
@@ -24,8 +21,6 @@ function getProductTypes() {
         
     }
 }
-
-
 function displayProducts(){
     global $conn;
     
@@ -44,7 +39,6 @@ function displayProducts(){
   
             $sql .= " AND productName LIKE :productName"; //using named parameters
             $namedParameters[':productName'] = $_GET['productName'];
-
          }
          
         if (!empty($_GET['productType'])) {
@@ -54,7 +48,6 @@ function displayProducts(){
   
             $sql .= " AND productType = :pType"; //using named parameters
             $namedParameters[':pType'] =   $_GET['productType'] ;
-
          }     
          
          if (isset($_GET['available'])) {
@@ -63,11 +56,11 @@ function displayProducts(){
          }
         
          if (isset($_GET['orderBy']) == name) {
-             if($_GET['orderBy'] == name)
+             if($_GET['orderBy'] == asc)
              {
                   $sql .= " ORDER BY productName";
              }else{
-                 $sql .= " ORDER BY price";
+                 $sql .= " ORDER BY productName DESC";
              }
                    
          }
@@ -96,7 +89,6 @@ function displayProducts(){
         
     }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -120,11 +112,11 @@ function displayProducts(){
             <label for="available"> Available </label>
             
             <br>
-            Order by:
-            <input type="radio" name="orderBy" id="orderByName" value="name"/> 
-             <label for="orderByName"> Name </label>
-            <input type="radio" name="orderBy" id="orderByPrice" value="price"/> 
-             <label for="orderByPrice"> Price </label>
+            Order by Name:
+            <input type="radio" name="orderBy" id="orderByName" value="asc"/> 
+             <label for="orderByName"> Asc </label>
+            <input type="radio" name="orderBy" id="orderByName" value="desc"/> 
+             <label for="orderByName"> Desc </label>
             
             <input type="submit" value="Search!" name="submit" >
         </form>
