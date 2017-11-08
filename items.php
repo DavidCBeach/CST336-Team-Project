@@ -92,7 +92,7 @@ function displayProducts(){
         echo  $record['productName'] . "     " .
               "<a target='checkoutHistory' href='checkoutHistory.php?productId=".$record['productId'].
               "'> Checkout History </a>  <a href='addcart.php?item=".$record['productName'].
-              "'> Add to Cart </a> <a target='description' href='description.php?productId=".$record['productId']."'> Description </a> <br /> </t>";
+              "'> Add to Cart </a> <a href='description.php?productId=".$record['productId']."'> Description </a> <br /> </t>";
         
     }
 }

@@ -13,6 +13,9 @@
             Username: <input type="text" name="email"/> <br />
             <input type="submit" name="login" value="Login"/>
             
+            <p>
+                Example: ter@ter.com
+            </p>
             
         </form>
     </body>
