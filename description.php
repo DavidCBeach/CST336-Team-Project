@@ -23,12 +23,23 @@ function displayDescription() {
         
        
         echo "Product Name:  " .$record['productName']  . "<br />";
+        $product = $record['productName'];
+        
         echo "Product Type:  " .$record['productType'] . "<br />";
         echo "Price:  $ " .$record['price'] . ".00" ."<br />";
-       
-    
         echo "<br />";
+        
+        echo "<img src='img/$product.jpg' alt='$product'>";
+       //  echo "<img id='reel$pos' src='img/$symbol.png' alt='$symbol' title='" . ucfirst($symbol). "' width='70'>"  ;
+        
+        
         }
+        
+      
+    
+}
+
+function displayProduct(){
     
 }
 
