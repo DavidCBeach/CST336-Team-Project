@@ -63,11 +63,11 @@ function displayProducts(){
          }
         
          if (isset($_GET['orderBy']) == name) {
-             if($_GET['orderBy'] == name)
+             if($_GET['orderBy'] == asc)
              {
                   $sql .= " ORDER BY productName";
              }else{
-                 $sql .= " ORDER BY price";
+                 $sql .= " ORDER BY productName DESC";
              }
                    
          }
@@ -120,11 +120,11 @@ function displayProducts(){
             <label for="available"> Available </label>
             
             <br>
-            Order by:
-            <input type="radio" name="orderBy" id="orderByName" value="name"/> 
-             <label for="orderByName"> Name </label>
-            <input type="radio" name="orderBy" id="orderByPrice" value="price"/> 
-             <label for="orderByPrice"> Price </label>
+            Order by Name:
+            <input type="radio" name="orderBy" id="orderByName" value="asc"/> 
+             <label for="orderByName"> Asc </label>
+            <input type="radio" name="orderBy" id="orderByName" value="desc"/> 
+             <label for="orderByName"> Desc </label>
             
             <input type="submit" value="Search!" name="submit" >
         </form>
