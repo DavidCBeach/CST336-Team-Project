@@ -18,7 +18,7 @@ $dbConn -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         
     </head>
     <body>
-        <h1>Farm Fresh: Fruits, Veggies, and Nuts</h1>
+        <h1 id="banner">Farm Fresh: Fruits, Veggies, and Nuts</h1>
         <h2>Choose login:</h2>
         <a href="userLogin.php" >Customer Login</a>
         
